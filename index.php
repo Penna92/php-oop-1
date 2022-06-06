@@ -82,7 +82,6 @@ $movies = [
             $movie = new Movie($value['title'], $value['genre'], $value['date'], $value['original_language']);
             // var_dump($movie);
             $movie->setPrice($value['price']);
-            // $movies[] = $movie; // potrei anche pushare le macchine così
         ?>
             <div class="card text-center d-flex flex-column justify-content-center col-sm-12 col-md-6 col-lg-4 mx-3 my-3 p-5 gap-3">
                 <h3>Title: <?php echo $movie->getTitle() ?></h3>
